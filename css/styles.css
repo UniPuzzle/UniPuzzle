@@ -6,7 +6,8 @@
   --bcg-color: #ebf3ff;
   --white-bgc: #ffffff;
   --item-block-bgc: #648dd4;
-  --bgc-date: #f53323;
+  --bgc-date: #dd2a1b;
+  --bgc-hero-card: #f53323;
 
   /* --team-bg-color: #f5f4fa;
   --dark-bg-color: #2f303a;
@@ -92,8 +93,12 @@ img {
   width: 65px;
   border-radius: 4px;
   background-color: var(--bgc-date);
-  padding-top: 10px;
-  padding-bottom: 10px;
+}
+
+.wrapper-date__hero {
+  border-left: 1px solid #ffffff;
+  background-color: transparent;
+  transform: skewX(-10deg);
 }
 
 /* Header */
@@ -179,7 +184,7 @@ img {
 
 .main-item__block {
   width: 440px;
-  background-color: red;
+  background-color: var(--bgc-hero-card);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -199,7 +204,20 @@ img {
   line-height: 1;
   color: var(--secondary-text-color);
 }
-.main-item__master {
+
+.wrapper-date > .item-text {
+  padding: 6px 12px;
+  text-align: center;
+  transform: skewX(10deg);
+}
+
+.item-text .decoration-text {
+  font-weight: 700;
+  font-size: 18px;
+  display: block;
+}
+
+.item-text .main-item__master {
   width: 440px;
   background-color: var(--white-bgc);
   /* padding-left: 35px; */
@@ -253,11 +271,10 @@ img {
   justify-content: space-between;
   border-radius: 4px;
   transform: skewX(-10deg);
-  /* margin-left: 17px; */
   position: absolute;
   z-index: 2;
   top: -40px;
-  left: 16px;
+  left: 18px;
 }
 
 .section-item__master {
