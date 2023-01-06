@@ -191,12 +191,32 @@ img {
 }
 
 .item-title {
+  display: flex;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.57;
   padding-top: 10px;
   padding-bottom: 10px;
   color: var(--secondary-text-color);
+}
+
+.item-title__hero::before {
+  display: block;
+  content: '';
+  height: 22px;
+  width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-coin::before {
+  background-image: url(../images/svg/svg/coinpuzzles.svg);
+}
+.icon-quizzes::before {
+  background-image: url(../images/svg/svg/puzzlequizzes.svg);
+}
+.icon-logic::before {
+  background-image: url(../images/svg/svg/logicproblems.svg);
 }
 .item-text {
   font-weight: 400;
