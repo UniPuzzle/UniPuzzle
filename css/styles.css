@@ -6,6 +6,7 @@
   --bcg-color: #ebf3ff;
   --white-bgc: #ffffff;
   --item-block-bgc: #648dd4;
+  --bgc-date: #f53323;
 
   /* --team-bg-color: #f5f4fa;
   --dark-bg-color: #2f303a;
@@ -85,6 +86,14 @@ img {
   line-height: 1.14;
   color: var(--title-color);
   text-transform: uppercase;
+}
+
+.wrapper-date {
+  width: 65px;
+  border-radius: 4px;
+  background-color: var(--bgc-date);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Header */
