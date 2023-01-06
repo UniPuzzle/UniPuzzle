@@ -25,7 +25,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.12;
   color: var(--main-text-color);
@@ -110,7 +110,7 @@ img {
 }
 
 .navigation::before {
-  content: "";
+  content: '';
   background-image: url(../images/svg/pyzzle.svg);
   width: 200px;
   height: 74px;
@@ -118,7 +118,7 @@ img {
 }
 
 .navigation .menu-item:not(:last-child)::after {
-  content: "";
+  content: '';
   background-image: url(../images/svg/svg/slash.svg);
   width: 9px;
   height: 23px;
