@@ -1,0 +1,276 @@
+:root {
+  --main-text-color: #19385d;
+  --bgc-header-menu: #3a6fc9;
+  --secondary-text-color: #ffffff;
+  --title-color: #0c3e96;
+  --bcg-color: #ebf3ff;
+  --white-bgc: #ffffff;
+  --item-block-bgc: #648dd4;
+
+  --team-bg-color: #f5f4fa;
+  --dark-bg-color: #2f303a;
+  --logo-font: 'Raleway', sans-serif;
+  --filter-color: #f5f4fa;
+  --hero-bg-color: #c4c4c4;
+  --one-item: 1;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.12;
+  color: var(--main-text-color);
+  background-color: var(--white-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1440px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header .container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.section {
+  padding-top: 134px;
+}
+.section-master {
+  padding-top: 29px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 1.14;
+  color: var(--title-color);
+  text-transform: uppercase;
+}
+
+/* Header */
+.header-logo {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+.header .menu {
+  display: flex;
+  background-color: var(--bgc-header-menu);
+  height: 74px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-logo {
+  width: 45px;
+  height: 45px;
+  margin-right: 11px;
+}
+
+.navigation::before {
+  content: '';
+  background-image: url(../images/svg/pyzzle.svg);
+  width: 200px;
+  height: 74px;
+  position: absolute;
+}
+
+.navigation .menu-item:not(:last-child)::after {
+  content: '';
+  background-image: url(../images/svg/svg/slash.svg);
+  width: 9px;
+  height: 23px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header .menu-item:last-child {
+  margin-right: 0px;
+}
+
+.header .menu-item {
+  font-size: 12px;
+  line-height: 1.08;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+
+  display: flex;
+  width: 140px;
+  align-items: center;
+  margin-right: 43px;
+}
+
+/* section-master */
+
+.section-master .main-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.bcg {
+  background-color: var(--bcg-color);
+}
+
+.main-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-item {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.main-img {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.main-item__block {
+  width: 440px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--secondary-text-color);
+}
+.item-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--secondary-text-color);
+}
+.main-item__master {
+  width: 440px;
+  background-color: var(--white-bgc);
+  /* padding-left: 35px; */
+  border-radius: 0px 0px 15px 15px;
+}
+
+.main-item__title {
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 1.05;
+  padding: 20px 0px 20px 35px;
+  text-transform: uppercase;
+}
+
+.main-item__title.position {
+  padding: 25px 127px 20px 35px;
+}
+
+.main-item__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.12;
+  color: var(--main-text-color);
+  padding: 0px 41px 40px 35px;
+}
+
+.main-item__text.current {
+  padding-right: 10px;
+}
+
+/* section PUZZLE CLASSICS  */
+.section-title {
+  margin-bottom: 359px;
+}
+
+.section-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-item {
+  position: relative;
+}
+
+.section-item__block {
+  width: 440px;
+  background-color: var(--item-block-bgc);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  transform: skewX(-10deg);
+  /* margin-left: 17px; */
+  position: absolute;
+  z-index: 2;
+  top: -40px;
+  left: 16px;
+}
+
+.section-item__master {
+  width: 440px;
+  background-color: var(--bcg-color);
+  /* padding-left: 35px; */
+  border-radius: 0px 0px 15px 15px;
+  transform: skewX(-10deg);
+}
+
+.transformation {
+  transform: skewX(10deg);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+/* section PUZZLE CLASSICS */
+
+.wrap-img {
+  position: absolute;
+  transform: translate(25%, -107%);
+  width: 286px;
+  height: 280px;
+}
