@@ -178,6 +178,13 @@ img {
   padding-bottom: 40px;
 }
 
+.main-item__master {
+  width: 440px;
+  background-color: var(--white-bgc);
+  /* padding-left: 35px; */
+  border-radius: 0px 0px 15px 15px;
+}
+
 .main-img {
   border-radius: 15px 15px 0px 0px;
 }
@@ -197,9 +204,12 @@ img {
   line-height: 1.57;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 36px;
   color: var(--secondary-text-color);
 }
-
+/* .item-title__hero {
+  padding-left: 36px;
+} */
 .item-title__hero::before {
   display: block;
   content: '';
@@ -208,10 +218,13 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 9px;
 }
+
 .icon-coin::before {
   background-image: url(../images/svg/svg/coinpuzzles.svg);
 }
+
 .icon-quizzes::before {
   background-image: url(../images/svg/svg/puzzlequizzes.svg);
 }
@@ -253,7 +266,7 @@ img {
 }
 
 .main-item__title.position {
-  padding: 25px 127px 20px 35px;
+  padding: 25px 127px 20px 53px;
 }
 
 .main-item__text {
@@ -271,6 +284,31 @@ img {
 /* section PUZZLE CLASSICS  */
 .section-title {
   margin-bottom: 359px;
+  display: flex;
+  align-items: center;
+}
+
+.pzlclassic .section-title::before {
+  content: '';
+
+  display: block;
+  margin-right: 35px;
+  margin-left: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-classicsrgb::before {
+  width: 48px;
+  height: 78px;
+  background-image: url(../images/svg/svg/puzzleclassicsrgb.svg);
+}
+
+.logo-chesspuzzgrin::before {
+  width: 56px;
+  height: 77px;
+  background-image: url(../images/svg/svg/chesspuzzgrin.svg);
 }
 
 .section-list {
@@ -297,6 +335,10 @@ img {
   left: 18px;
 }
 
+.section-item__block.item-title {
+  padding-left: 35px;
+}
+
 .section-item__master {
   width: 440px;
   background-color: var(--bcg-color);
@@ -319,4 +361,8 @@ img {
   transform: translate(25%, -107%);
   width: 286px;
   height: 280px;
+}
+
+.section-item__master .main-item__text {
+  padding-left: 53px;
 }
