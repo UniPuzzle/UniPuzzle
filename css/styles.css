@@ -366,3 +366,45 @@ img {
 .section-item__master .main-item__text {
   padding-left: 53px;
 }
+
+.wrapper-drop {
+  display: flex;
+  justify-content: space-between;
+}
+.arrow-down {
+  position: absolute;
+  transform: translateY(34px);
+  padding-left: 596px;
+  pointer-events: none;
+}
+.arrow-down::before {
+  content: '';
+  display: block;
+  width: 13px;
+  height: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/svg/arrowdown.svg);
+}
+.drop {
+  padding-left: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 619px;
+  height: 32px;
+  margin-top: 22px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+}
+.drop-style {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  color: var(--item-block-bgc);
+  cursor: pointer;
+  border: 0.5px solid var(--item-block-bgc);
+  border-radius: 4px;
+}
