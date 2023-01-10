@@ -496,8 +496,8 @@ img {
 
 /* section COIN PUZZLES */
 .coin-section .item-title {
-  padding-top: 20px;
-  padding-bottom: 28px;
+  padding-top: 16px;
+  padding-bottom: 25px;
   padding-left: 0;
 }
 .coin-img {
@@ -554,16 +554,42 @@ img {
   display: block;
   position: absolute;
   background-image: url(../images/svg/line-coin.svg);
-  width: 87px;
+  width: 90px;
   height: 511px;
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: 312px;
+  margin-left: 350px;
 }
 
 .coin-img:not(:last-child) {
   margin-left: 25px;
 }
+.coin-img.eurotodollar {
+  margin-left: 90px;
+}
+.coin-img.coincup {
+  margin-left: 111px;
+}
+
+.coin-img.triangles {
+  margin-left: 20px;
+}
+
 .flex-item {
   margin-left: 43px;
+}
+.coin-title-svg::after {
+  content: '';
+  width: 42px;
+  background-image: url(../images/sec-coin/svg/cointitlesvg.svg);
+  height: 21px;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* margin-bottom: -21px; */
+  background-size: contain;
+}
+.another-svg::after {
+  width: 22px;
+  height: 22px;
+  background-image: url(../images/sec-coin/svg/cointraingles.svg);
 }
