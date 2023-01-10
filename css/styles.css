@@ -373,6 +373,11 @@ img {
   height: 77px;
   background-image: url(../images/svg/svg/coinpuzzlesrgb.svg);
 }
+.logo-logicrgb::before {
+  width: 89px;
+  height: 89px;
+  background-image: url(../images/svg/svg/logicrgb.svg);
+}
 
 .section-list {
   display: flex;
@@ -592,4 +597,63 @@ img {
   width: 22px;
   height: 22px;
   background-image: url(../images/sec-coin/svg/cointraingles.svg);
+}
+
+.coin .wrapper-date {
+  transform: skewX(-10deg);
+  border-radius: 4px 0px 0px 4px;
+}
+.coin-date {
+  position: absolute;
+  transform: translate(0, -100%);
+  margin-left: 246px;
+}
+
+/* section LOGIC PROBLEMS */
+.logic .section-title {
+  margin-bottom: 84px;
+}
+
+.logic-img {
+  /* position: absolute; */
+  /* transform: translate(0%, -111%); */
+  width: 707px;
+  height: 348px;
+}
+
+.section-list .logic-item__block {
+  width: 647px;
+  height: 43px;
+  transform: skewX(0deg);
+  border-radius: 0px 0px 40px 4px;
+  padding-left: 20px;
+  top: -40px;
+  left: 0px;
+  background-color: var(--item-block-bgc);
+  display: flex;
+  align-items: center;
+}
+
+.logic .wrapper-date {
+  width: 73px;
+  margin-left: auto;
+  transform: skewX(-10deg);
+  border-radius: 4px 0px 4px 4px;
+}
+
+.logic .section-img {
+  border-radius: 10px 10px 0px 0px;
+}
+.logic .main-item__title {
+  padding: 21px 0px 20px 20px;
+}
+.logic .item-title:not(:first-child) {
+  align-items: baseline;
+  padding-left: 20px;
+}
+.logic .main-item__text {
+  padding: 0px 0px 0px 20px;
+}
+.logic .section-item {
+  width: 550px;
 }
