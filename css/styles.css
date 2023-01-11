@@ -626,12 +626,16 @@ img {
   height: 43px;
   transform: skewX(0deg);
   border-radius: 0px 0px 40px 4px;
-  padding-left: 20px;
+
   top: -40px;
   left: 0px;
   background-color: var(--item-block-bgc);
   display: flex;
   align-items: center;
+}
+.section-item .item-title {
+  align-items: baseline;
+  /* padding-left: 20px; */
 }
 
 .logic .wrapper-date {
@@ -644,16 +648,92 @@ img {
 .logic .section-img {
   border-radius: 10px 10px 0px 0px;
 }
-.logic .main-item__title {
-  padding: 21px 0px 20px 20px;
+.section-item .main-item__title-reverse {
+  padding: 0px 0px 20px 20px;
 }
-.logic .item-title:not(:first-child) {
+.logic-item.item-title:not(:first-child) {
   align-items: baseline;
   padding-left: 20px;
 }
-.logic .main-item__text {
-  padding: 0px 0px 0px 20px;
-}
+/* .section-item .main-item__text {
+  padding: 0px 0px 23px 20px;
+} */
 .logic .section-item {
+  width: 550px;
+}
+.logic .section-item:not(:last-child) {
+  margin-right: 161px;
+}
+
+/* ==================== */
+
+.logic-revers .section-title {
+  margin-bottom: 84px;
+}
+
+.logic-img {
+  /* position: absolute; */
+  /* transform: translate(0%, -111%); */
+  width: 707px;
+  height: 348px;
+}
+.logic-img.reverse {
+  /* position: absolute; */
+  /* transform: translate(0%, -111%); */
+  margin-left: -59px;
+}
+.logic .section-list {
+  justify-content: flex-start;
+}
+.section-list .logic-item__block-reverse {
+  width: 647px;
+  height: 42px;
+  transform: skewX(0deg);
+  border-radius: 40px 4px 0px 0px;
+  padding-left: 0px;
+  top: -40px;
+  left: 0px;
+  background-color: var(--item-block-bgc);
+  display: flex;
+  align-items: center;
+}
+
+.logic-revers .item-title {
+  padding-left: 20px;
+}
+.logic-title {
+  padding-left: 35px;
+}
+.logic-revers .wrapper-date {
+  width: 73px;
+  margin-left: 2px;
+  /* margin-right: auto; */
+  transform: skewX(-10deg);
+  border-radius: 4px 4px 0px 0px;
+}
+
+.section-item .section-img__revers {
+  border-radius: 0px 0px 10px 10px;
+}
+.logic .main-item__title {
+  padding: 21px 0px 20px 35px;
+}
+
+.logic .main-item__title-reverse {
+  /* padding: 0px 0px 20px 20px; */
+  padding-left: 20px;
+  padding-bottom: 23px;
+  padding-top: 0px;
+}
+.logic .main-item__text {
+  padding-left: 35px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+}
+.reverse .main-item__text {
+  padding: 0px 0px 23px 20px;
+}
+.logic-revers .section-item {
   width: 550px;
 }
