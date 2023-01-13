@@ -58,7 +58,7 @@ img {
 .link:hover,
 .link:focus {
   cursor: pointer;
-  outline: none;
+  /* outline: transparent; */
   font-weight: 800;
 }
 
@@ -121,6 +121,7 @@ img {
   display: flex;
   background-color: var(--bgc-header-menu);
   height: 74px;
+  margin-left: 89px;
   align-items: center;
   justify-content: center;
 }
@@ -132,62 +133,69 @@ img {
   position: absolute;
 }
 
-.navigation-logo {
+.menu-item {
+  display: flex;
+  align-items: center;
+}
+.menu-link {
+  display: flex;
+  align-items: center;
+}
+.navigation-logo::before {
   content: '';
   background-repeat: no-repeat;
   background-position: center;
-  width: 45px;
+  display: block;
+  width: 55px;
   height: 45px;
   margin-right: 11px;
 }
-.logicrgb {
+.logicrgb::before {
   background-image: url(../images/sec-hero/svg/logichero.svg);
 }
 
-.logicrgb:hover,
-.logicrgb:focus {
+.logicrgb:hover::before,
+.logicrgb:focus::before {
   background-image: url(../images/sec-hero/svg/logicrgb.svg);
-  cursor: pointer;
-  outline: none;
 }
 
-.coinrgb {
+.coinrgb::before {
   background-image: url(../images/sec-hero/svg/coinhero.svg);
 }
 
-.coinrgb:hover,
-.coinrgb:focus {
+.coinrgb:hover::before,
+.coinrgb:focus::before {
   background-image: url(../images/sec-hero/svg/coinrgb.svg);
   cursor: pointer;
   outline: none;
 }
 
-.chessrgb {
+.chessrgb::before {
   background-image: url(../images/sec-hero/svg/chesshero.svg);
 }
 
-.chessrgb:hover,
-.chessrgb:focus {
+.chessrgb:hover::before,
+.chessrgb:focus::before {
   background-image: url(../images/sec-hero/svg/chessrgb.svg);
   cursor: pointer;
   outline: none;
 }
-.classicsrgb {
+.classicsrgb::before {
   background-image: url(../images/sec-hero/svg/classicshero.svg);
 }
 
-.classicsrgb:hover,
-.classicsrgb:focus {
+.classicsrgb:hover::before,
+.classicsrgb:focus::before {
   background-image: url(../images/sec-hero/svg/classicsrgb.svg);
   cursor: pointer;
   outline: none;
 }
-.holidayrgb {
+.holidayrgb::before {
   background-image: url(../images/sec-hero/svg/holidayhero.svg);
 }
 
-.holidayrgb:hover,
-.holidayrgb:focus {
+.holidayrgb:hover::before,
+.holidayrgb:focus::before {
   background-image: url(../images/sec-hero/svg/holidayrgb.svg);
   cursor: pointer;
   outline: none;
@@ -520,7 +528,7 @@ img {
   position: absolute;
   top: 50%;
   transform: translate(35%, -50%);
-  margin-left: 25px;
+  margin-left: 45px;
 }
 .coin-title {
   font-weight: 700;
@@ -574,29 +582,33 @@ img {
   height: 511px;
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: 350px;
+  margin-left: 348px;
+}
+.coin-item:first-of-type {
+  margin-left: -33px;
 }
 
 .coin-img:not(:last-child) {
   margin-left: 25px;
 }
 .coin-img.eurotodollar {
-  margin-left: 90px;
+  margin-left: 94px;
 }
 .coin-img.coincup {
-  margin-left: 111px;
+  margin-left: 108px;
 }
 
 .coin-img.triangles {
-  margin-left: 20px;
+  margin-left: 27px;
 }
 
 .flex-item {
-  margin-left: 43px;
+  margin-left: 70px;
 }
+
 .coin-title-svg::after {
   content: '';
-  width: 42px;
+  width: 36px;
   background-image: url(../images/sec-coin/svg/cointitlesvg.svg);
   height: 21px;
   background-position: center;
@@ -617,7 +629,7 @@ img {
 .coin-date {
   position: absolute;
   transform: translate(0, -100%);
-  margin-left: 246px;
+  margin-left: 217px;
 }
 
 /* section LOGIC PROBLEMS */
@@ -721,7 +733,7 @@ img {
   margin-left: 2px;
   /* margin-right: auto; */
   transform: skewX(-10deg);
-  border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 4px 0px;
 }
 
 .section-item .section-img__revers {
@@ -766,7 +778,7 @@ img {
 }
 .footer-text {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.08;
   color: var(--secondary-text-color);
 }
@@ -775,17 +787,22 @@ img {
 }
 .footer-logo {
   margin-left: 35px;
-  margin-right: 166px;
+  margin-right: 96px;
 }
 .footer-img {
-  width: 150px;
+  width: 190px;
   height: 40px;
   margin-bottom: 98px;
   margin-top: 130px;
 }
 .text__copyright {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.18px;
+  width: 290px;
+}
+.text__copyright:hover {
+  font-weight: 800;
+  cursor: pointer;
 }
 
 .footer-nav__background {
@@ -804,8 +821,8 @@ img {
 }
 
 .footer-contacts {
-  margin-left: auto;
-  margin-right: 35px;
+  margin-left: 280px;
+
   margin-top: 130px;
 }
 .footer-link {
@@ -813,12 +830,12 @@ img {
   align-items: center;
 }
 .footer-item:not(:last-child) {
-  padding-bottom: 18px;
+  padding-bottom: 15px;
 }
 .logo-link::before {
   content: '';
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   margin-right: 12px;
   display: block;
   background-repeat: no-repeat;
@@ -828,17 +845,38 @@ img {
 .logic::before {
   background-image: url(../images/sec-footer/svg/logic-footer.svg);
 }
+.logic:hover::before,
+.logic:focus::before {
+  background-image: url(../images/sec-hero/svg/logicrgb.svg);
+}
+
 .coin::before {
   background-image: url(../images/sec-footer/svg/coin-footer.svg);
+}
+.coin:hover::before,
+.coin:focus::before {
+  background-image: url(../images/sec-hero/svg/coinrgb.svg);
 }
 .chess::before {
   background-image: url(../images/sec-footer/svg/chess-footer.svg);
 }
+.chess:hover::before,
+.chess:focus::before {
+  background-image: url(../images/sec-hero/svg/chessrgb.svg);
+}
 .classics::before {
   background-image: url(../images/sec-footer/svg/classics-footer.svg);
 }
+.classics:hover::before,
+.classics:focus::before {
+  background-image: url(../images/sec-hero/svg/classicsrgb.svg);
+}
 .holiday::before {
   background-image: url(../images/sec-footer/svg/holiday-footer.svg);
+}
+.holiday:hover::before,
+.holiday:focus::before {
+  background-image: url(../images/sec-hero/svg/holidayhero.svg);
 }
 .footer-text__contact {
   font-weight: 800;
@@ -848,11 +886,10 @@ img {
 }
 .footer-text__policy {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.18;
 }
 .link-contact:hover,
 .link-contact:focus {
-  font-weight: 400;
-  outline: none;
+  font-size: 13px;
 }
