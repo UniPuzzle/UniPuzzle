@@ -10,17 +10,11 @@
   --bgc-hero-card: #f53323;
   --bcg-color-footer: #19385d;
 
-  /* --team-bg-color: #f5f4fa;
-  --dark-bg-color: #2f303a;
-  --logo-font: 'Raleway', sans-serif;
-  --filter-color: #f5f4fa;
-  --hero-bg-color: #c4c4c4;
-  --one-item: 1;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --animation-duration: 250ms; */
+  --transition: 250ms;
 }
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *::after,
@@ -60,6 +54,8 @@ img {
   cursor: pointer;
   /* outline: transparent; */
   font-weight: 800;
+
+  transition: var(--transition);
 }
 
 .list {
@@ -136,11 +132,16 @@ img {
 .menu-item {
   display: flex;
   align-items: center;
+  /* width: 140px; */
 }
 .menu-link {
   display: flex;
   align-items: center;
 }
+.menu-link:hover {
+  transition: var(--transition);
+}
+
 .navigation-logo::before {
   content: '';
   background-repeat: no-repeat;
@@ -149,6 +150,7 @@ img {
   width: 55px;
   height: 45px;
   margin-right: 11px;
+  transition: var(--transition);
 }
 .logicrgb::before {
   background-image: url(../images/sec-hero/svg/logichero.svg);
@@ -222,7 +224,7 @@ img {
   text-transform: uppercase;
 
   display: flex;
-  width: 140px;
+  width: 147px;
   align-items: center;
   margin-right: 43px;
 }
@@ -246,6 +248,11 @@ img {
 .main-item {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+.main-item:hover,
+.main-item:focus {
+  transform: scale(1.03);
+  transition: var(--transition);
 }
 
 .main-item__master {
@@ -776,6 +783,7 @@ img {
   background-size: contain;
   background-image: url(../images/sec-footer/backgr-footer.png);
 }
+
 .footer-text {
   font-weight: 400;
   font-size: 14px;
@@ -795,14 +803,21 @@ img {
   margin-bottom: 98px;
   margin-top: 130px;
 }
+.footer-img:hover,
+.footer-img:focus {
+  transform: scale(1.1);
+  transition: var(--transition);
+}
 .text__copyright {
   font-size: 12px;
   line-height: 1.18px;
   width: 290px;
 }
-.text__copyright:hover {
+.text__copyright:hover,
+.text__copyright:focus {
   font-weight: 800;
   cursor: pointer;
+  transition: var(--transition);
 }
 
 .footer-nav__background {
@@ -812,7 +827,6 @@ img {
   background-color: rgba(58, 111, 201, 0.6);
 
   align-items: center;
-  /* justify-content: center; */
   transform: skewX(-10deg);
 }
 .nav-list {
@@ -840,6 +854,7 @@ img {
   display: block;
   background-repeat: no-repeat;
   background-size: contain;
+  transition: var(--transition);
 }
 
 .logic::before {
