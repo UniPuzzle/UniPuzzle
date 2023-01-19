@@ -71,16 +71,26 @@ img {
   margin-left: auto;
 }
 
-.header .container {
+.header__container {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  transition: var(--transition);
 }
 
 .section {
   padding-top: 134px;
 }
 
-.section-master {
+.main {
   padding-top: 29px;
 }
 
@@ -105,21 +115,21 @@ img {
   margin-left: auto;
 }
 
-.wrapper-date__hero {
+.aside__wrapper-date {
   border-left: 1px solid #ffffff;
   background-color: transparent;
   transform: skewX(-10deg);
 }
 
 /* Header */
-.header-logo {
+.header__logo {
   margin-left: auto;
   margin-right: auto;
   padding-top: 12px;
   padding-bottom: 10px;
 }
 
-.header .menu {
+.navigation__menu {
   display: flex;
   background-color: var(--bgc-header-menu);
   height: 74px;
@@ -138,19 +148,30 @@ img {
 .menu-item {
   display: flex;
   align-items: center;
-}
-
-.menu-link {
+  font-size: 12px;
+  line-height: 1.08;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
   display: flex;
+  width: 147px;
   align-items: center;
+  margin-right: 43px;
+}
+.navigation__item:not(:last-child)::after {
+  content: '';
+  background-image: url(../images/svg/svg/slash.svg);
+  width: 9px;
+  height: 23px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.menu-link:hover,
-.menu-link:focus {
-  transition: var(--transition);
+.navigation__item:last-child {
+  margin-right: 0px;
 }
 
-.navigation-logo::before {
+.navigation__logo::before {
   content: '';
   background-repeat: no-repeat;
   background-position: center;
@@ -208,34 +229,9 @@ img {
   cursor: pointer;
 }
 
-.navigation .menu-item:not(:last-child)::after {
-  content: '';
-  background-image: url(../images/svg/svg/slash.svg);
-  width: 9px;
-  height: 23px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.header .menu-item:last-child {
-  margin-right: 0px;
-}
-
-.header .menu-item {
-  font-size: 12px;
-  line-height: 1.08;
-  font-weight: 400;
-  color: var(--secondary-text-color);
-  text-transform: uppercase;
-  display: flex;
-  width: 147px;
-  align-items: center;
-  margin-right: 43px;
-}
-
 /* section-master */
 
-.section-master .main-title {
+.main__title {
   text-align: center;
   margin-bottom: 32px;
 }
@@ -244,17 +240,17 @@ img {
   background-color: var(--bcg-color);
 }
 
-.main-list {
+.main__list {
   display: flex;
   justify-content: space-between;
 }
 
-.main-item {
+.main__item {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.main-item:hover,
-.main-item:focus {
+.main__item:hover,
+.main__item:focus {
   transform: scale(1.02);
   transition: var(--transition);
 }
@@ -262,15 +258,14 @@ img {
 .main-item__master {
   width: 440px;
   background-color: var(--white-bgc);
-  /* padding-left: 35px; */
   border-radius: 0px 0px 15px 15px;
 }
 
-.main-img {
+.main__img {
   border-radius: 15px 15px 0px 0px;
 }
 
-.main-item__block {
+.main__aside {
   width: 440px;
   background-color: var(--bgc-hero-card);
   display: flex;
@@ -289,14 +284,14 @@ img {
   color: var(--secondary-text-color);
 }
 
-.item-title .modification {
+.modification {
   font-weight: 600;
   font-size: 28px;
   line-height: 0.79;
   margin-left: 5px;
 }
 
-.item-title__hero::before {
+.main__svg::before {
   display: block;
   content: '';
   height: 22px;
@@ -317,53 +312,53 @@ img {
 .icon-logic::before {
   background-image: url(../images/svg/svg/logicproblems.svg);
 }
-.item-text {
+.aside__text-date {
   font-weight: 400;
   font-size: 12px;
   line-height: 1;
   color: var(--secondary-text-color);
-}
-
-.wrapper-date > .item-text {
   padding: 6px 12px;
   text-align: center;
   transform: skewX(10deg);
 }
 
-.item-text .decoration-text {
+.aside__text--bold {
   font-weight: 700;
   font-size: 18px;
   display: block;
 }
 
-.item-text .main-item__master {
+.main__aside-master {
   width: 440px;
   background-color: var(--white-bgc);
   border-radius: 0px 0px 15px 15px;
 }
 
-.main-item__title {
+.aside__title {
   font-weight: 800;
   font-size: 21px;
   line-height: 1.05;
-  padding: 20px 0px 20px 35px;
   text-transform: uppercase;
 }
-
-.main-item__title.position {
+.aside__title--position {
   padding: 25px 127px 20px 53px;
 }
-
-.main-item__text {
+.aside-master__title {
+  padding: 20px 127px 20px 35px;
+}
+.aside__text--position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.12;
   color: var(--main-text-color);
   padding: 0px 41px 40px 35px;
 }
-
-.main-item__text.current {
-  padding-right: 10px;
+.aside__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.12;
+  color: var(--main-text-color);
+  padding: 0px 41px 40px 53px;
 }
 
 /* section PUZZLE CLASSICS  */
@@ -373,7 +368,7 @@ img {
   align-items: center;
 }
 
-.pzlclassic .section-title::before {
+.logo__title::before {
   content: '';
   display: block;
   margin-right: 35px;
@@ -383,26 +378,26 @@ img {
   background-size: cover;
 }
 
-.logo-classicsrgb::before {
+.classic__logo-classicsrgb::before {
   width: 48px;
   height: 78px;
   background-image: url(../images/svg/svg/puzzleclassicsrgb.svg);
 }
 
-.logo-chesspuzzgrin::before {
+.chess__logo-chesspuzzgrin::before {
   width: 56px;
   height: 77px;
   background-image: url(../images/svg/svg/chesspuzzgrin.svg);
 }
 
-.logo-coinrgb::before {
+.coin__logo-coinrgb::before {
   width: 70px;
   height: 77px;
   background-image: url(../images/svg/svg/coinpuzzlesrgb.svg);
 }
-.logo-logicrgb::before {
-  width: 89px;
-  height: 89px;
+.logic__logo-logicrgb::before {
+  width: 76px;
+  height: 76px;
   background-image: url(../images/svg/svg/logicrgb.svg);
 }
 
@@ -412,13 +407,9 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-.section-item {
-  position: relative;
-}
-.classic .section-item {
-  position: relative;
-  width: calc((100%-54px) / 3);
-  margin-bottom: 400px;
+
+.section-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .section-item:hover,
@@ -427,16 +418,14 @@ img {
   transition: var(--transition);
 }
 
-.section-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.classic .section-item:nth-last-child(-n + 3) {
+.section-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.chess .section-item__block {
-  left: 16px;
+.section-item {
+  position: relative;
+  width: calc((100%-54px) / 3);
+  margin-bottom: 400px;
 }
 
 .section-item__block {
@@ -454,13 +443,17 @@ img {
   padding-left: 36px;
 }
 
-.chess .item-title {
+.section-item__block--position {
+  left: 16px;
+}
+
+.chess__item-title {
   align-items: baseline;
   padding-top: 9px;
   padding-bottom: 4px;
 }
 
-.chess .item-title:not(:first-child) {
+.chess__item-title:not(:first-child) {
   padding-left: 20px;
 }
 
@@ -482,10 +475,6 @@ img {
   transform: translate(33%, -107%);
   width: 286px;
   height: 280px;
-}
-
-.section-item__master .main-item__text {
-  padding-left: 53px;
 }
 
 .wrapper-drop {
@@ -535,39 +524,43 @@ img {
 }
 
 /* section COIN PUZZLES */
-.coin-section .item-title {
+/* .coin__title {
   padding-top: 16px;
   padding-bottom: 25px;
   padding-left: 0;
-}
+} */
 
-.coin-img {
+.coin__img {
   position: absolute;
   top: 50%;
   transform: translate(35%, -50%);
   margin-left: 45px;
 }
 
-.coin-title {
+.coin__aside--wrap {
+  display: flex;
+}
+
+.coin__title {
   font-weight: 700;
   font-size: 21px;
   line-height: 1.05;
   color: var(--secondary-text-color);
 }
 
-.coin .item-title {
-  align-items: baseline;
-}
-
-.coin-text {
+.coin__aside-title {
   display: flex;
+  align-items: baseline;
+  padding-top: 16px;
+  padding-bottom: 25px;
+  padding-left: 0;
 }
 
-.coin-section .section-title {
+.coin__section-title {
   margin-bottom: 86px;
 }
 
-.coin .item-title:not(:first-child) {
+.coin__item-title:not(:first-child) {
   padding-left: 15px;
 }
 
@@ -578,7 +571,7 @@ img {
   margin-right: auto;
 }
 
-.coin-wrap .main-item__text {
+.aside__text--changes {
   color: var(--secondary-text-color);
   padding: 0;
   width: 291px;
@@ -594,7 +587,7 @@ img {
   margin-bottom: 40px;
 }
 
-.coin-item:not(:last-child)::before {
+.coin__item:not(:last-child)::before {
   content: '';
   display: block;
   position: absolute;
@@ -606,23 +599,23 @@ img {
   margin-left: 348px;
 }
 
-.coin-item:first-of-type {
+.coin__item:first-of-type {
   margin-left: -33px;
 }
 
-.coin-img:not(:last-child) {
+.coin__img:not(:last-child) {
   margin-left: 25px;
 }
 
-.coin-img.eurotodollar {
+.coin__img.eurotodollar {
   margin-left: 94px;
 }
 
-.coin-img.coincup {
+.coin__img.coincup {
   margin-left: 108px;
 }
 
-.coin-img.triangles {
+.coin__img.triangles {
   margin-left: 27px;
 }
 
@@ -630,7 +623,7 @@ img {
   margin-left: 70px;
 }
 
-.coin-title-svg::after {
+.coin__title-svg::after {
   content: '';
   width: 36px;
   background-image: url(../images/sec-coin/svg/cointitlesvg.svg);
@@ -640,18 +633,18 @@ img {
   background-size: contain;
 }
 
-.another-svg::after {
+.coin__title-svg--another::after {
   width: 22px;
   height: 22px;
   background-image: url(../images/sec-coin/svg/cointraingles.svg);
 }
 
-.coin .wrapper-date {
+.coin__wrapper-date {
   transform: skewX(-10deg);
   border-radius: 4px 0px 0px 4px;
 }
 
-.coin-date {
+.coin__date {
   position: absolute;
   transform: translate(0, -100%);
   margin-left: 217px;
@@ -659,16 +652,18 @@ img {
 
 /* section LOGIC PROBLEMS */
 
-.logic .section-title {
-  margin-bottom: 84px;
+.logic__section-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
 }
 
-.logic-img {
+.logic__img {
   width: 707px;
   height: 348px;
 }
 
-.section-list .logic-item__block {
+.logic__item-block {
   width: 647px;
   height: 42px;
   transform: skewX(0deg);
@@ -680,60 +675,91 @@ img {
   align-items: center;
 }
 
-.section-item .item-title {
-  align-items: baseline;
-}
-
-.logic .wrapper-date {
+.logic__wrapper-date {
   width: 73px;
   margin-left: auto;
   transform: skewX(-10deg);
   border-radius: 4px 0px 4px 4px;
 }
 
-.logic .section-img {
+.logic__wrap-item {
+  width: 550px;
+}
+.logic__wrap-item:not(:last-child) {
+  margin-right: 161px;
+}
+
+.logic__wrap-img {
+  width: 707px;
+  height: 348px;
   border-radius: 10px 10px 0px 0px;
 }
 
-.section-item .main-item__title-reverse {
-  padding: 0px 0px 20px 20px;
+.logic__wrap-img--reverse {
+  margin-left: -59px;
 }
 
-.logic-item.item-title:not(:first-child) {
+/* .section-item .main-item__title-reverse {
+  padding: 0px 0px 20px 20px;
+} */
+
+.logic__title:not(:first-child) {
   align-items: baseline;
   padding-left: 20px;
 }
 
-.logic .section-item {
+.logic__item {
   width: 550px;
+  position: relative;
+  margin-bottom: 0px;
 }
 
-.logic .section-item:not(:last-child) {
+.logic__item:hover,
+.logic__item:focus {
+  transform: scale(1.01);
+  transition: var(--transition);
+}
+
+.logic__item:not(:last-child) {
   margin-right: 161px;
 }
-
-.logic > .logic-title {
-  padding-right: 20px;
+.logic__aside-title {
+  padding: 21px 0px 20px 35px;
+}
+.logic__aside-title--revers {
+  padding: 0px 0px 20px 35px;
+}
+.logic__aside-text {
+  padding-left: 35px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
 }
 
-.logic-revers .section-title {
+.logic__aside-text--revers {
+  padding: 0px 0px 23px 20px;
+}
+
+.logic__title {
+  padding-left: 35px;
+  align-items: baseline;
+  /* padding-right: 20px;
+  */
+}
+
+/* .logic__section-title {
   margin-bottom: 84px;
-}
+} */
 
-.logic-img {
-  width: 707px;
-  height: 348px;
-}
-
-.logic-img.reverse {
+.logic__img--reverse {
   margin-left: -59px;
 }
 
-.logic .section-list {
+.logic__section-list {
   justify-content: flex-start;
 }
 
-.section-list .logic-item__block-reverse {
+.logic__item-block--reverse {
   width: 647px;
   height: 42px;
   transform: skewX(0deg);
@@ -746,48 +772,25 @@ img {
   align-items: center;
 }
 
-.logic-revers .item-title {
-  padding-left: 20px;
-}
-
-.logic-title {
-  padding-left: 35px;
-}
-
-.logic-revers .wrapper-date {
+.logic__wrapper-date--revers {
   width: 73px;
   margin-left: 2px;
   transform: skewX(-10deg);
   border-radius: 4px 4px 4px 0px;
 }
 
-.section-item .section-img__revers {
+.logic__img--revers {
   border-radius: 0px 0px 10px 10px;
 }
 
-.logic .main-item__title {
+/* .logic .main-item__title {
   padding: 21px 0px 20px 35px;
-}
+} */
 
-.logic .main-item__title-reverse {
+.logic__aside-title--revers {
   padding-left: 20px;
   padding-bottom: 23px;
   padding-top: 0px;
-}
-
-.logic .main-item__text {
-  padding-left: 35px;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-}
-
-.reverse .main-item__text {
-  padding: 0px 0px 23px 20px;
-}
-
-.logic-revers .section-item {
-  width: 550px;
 }
 
 /* footer */

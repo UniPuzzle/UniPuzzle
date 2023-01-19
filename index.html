@@ -18,26 +18,26 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <a class="logo link" href="./index.html"><img class="header-logo" src="./images/svg/logo.svg" width="253"
+    <div class="header__container container">
+      <a class="logo link" href="./index.html"><img class="header__logo" src="./images/svg/logo.svg" width="253"
           alt="UniPuzzle" />
       </a>
       <nav class="navigation">
-        <ul class="list menu">
-          <li class="menu-item ">
-            <a class="menu-link navigation-logo logicrgb link" href="#logic">LOGIC PROBLEMS</a>
+        <ul class="list navigation__menu">
+          <li class="navigation__item menu-item">
+            <a class="navigation__logo menu-link logicrgb link" href="#logic">LOGIC PROBLEMS</a>
           </li>
-          <li class="menu-item">
-            <a class="menu-link navigation-logo coinrgb link" href="#coin">COIN PUZZLES</a>
+          <li class="navigation__item menu-item">
+            <a class="navigation__logo menu-link coinrgb link" href="#coin">COIN PUZZLES</a>
           </li>
-          <li class="menu-item">
-            <a class="menu-link navigation-logo chessrgb link" href="#chess">CHESS PUZZLES</a>
+          <li class="navigation__item menu-item">
+            <a class="navigation__logo menu-link chessrgb link" href="#chess">CHESS PUZZLES</a>
           </li>
-          <li class="menu-item">
-            <a class="menu-link navigation-logo classicsrgb link" href="#classics">PUZZLE CLASSICS</a>
+          <li class="navigation__item menu-item">
+            <a class="navigation__logo menu-link classicsrgb link" href="#classics">PUZZLE CLASSICS</a>
           </li>
-          <li class="menu-item">
-            <a class="menu-link navigation-logo holidayrgb link" href="#holiday">HOLIDAY PUZZLES</a>
+          <li class="navigation__item menu-item">
+            <a class="navigation__logo menu-link holidayrgb link" href="#holiday">HOLIDAY PUZZLES</a>
           </li>
         </ul>
       </nav>
@@ -48,26 +48,28 @@
     <!-- section 3 WEEKLY INTERACTIVE PUZZLES -->
 
 
-    <section class="main section section-master">
-      <h1 class="main-title title container">3 WEEKLY INTERACTIVE PUZZLES</h1>
+    <section class="main section">
+      <h1 class="main__title title container">3 WEEKLY INTERACTIVE PUZZLES</h1>
 
       <div class="container bcg">
-        <ul class="main-list list">
-          <li class="main-item">
+        <ul class="main__list list">
+          <li class="main__item">
 
-            <a class="main-item__link link" href="/coin-puzzles/index.php">
-              <img class="main-img" src="./images/sec-hero/SHRINK THE SQUARE.jpg" alt="Coin-Puzzles" width="440"
+            <a class="main__link link" href="/coin-puzzles/index.php">
+              <img class="main__img" src="./images/sec-hero/SHRINK THE SQUARE.jpg" alt="Coin-Puzzles" width="440"
                 height="287" />
-              <div class="main-item__block ">
+              <div class="main__aside">
 
-                <h2 class="item-title item-title__hero icon-coin ">Coin Puzzles</h2>
-                <div class="wrapper-date wrapper-date__hero">
-                  <p class="item-text "><span class="decoration-text">NEW</span>Dec 8</p>
+                <h2 class="item-title main__svg icon-coin ">Coin Puzzles</h2>
+                <div class="aside__wrapper-date wrapper-date ">
+                  <p class="aside__text-date ">
+                    <span class="aside__text--bold">NEW</span>Dec 8
+                  </p>
                 </div>
               </div>
-              <div class="main-item__master">
-                <h3 class="main-item__title title">SHRINK THE SQUARE</h3>
-                <p class="main-item__text">
+              <div class="main__aside-master ">
+                <h3 class="aside-master__title aside__title title">SHRINK THE SQUARE</h3>
+                <p class="aside__text--position">
                   Shrink the loose square frame into a solid one,
                   employing the minimum number of
                 </p>
@@ -75,20 +77,21 @@
             </a>
 
           </li>
-          <li class="main-item">
+          <li class="main__item">
             <div class="main-item__card">
-              <a class="main-item__link link" href="/category/puzzle-quizzes/">
-                <img class="main-img" src="./images/sec-hero/HALF-MOONS.jpg" alt="Puzzle Quizzes" width="440"
+              <a class="main__link link" href="/category/puzzle-quizzes/">
+                <img class="main__img" src="./images/sec-hero/HALF-MOONS.jpg" alt="Puzzle Quizzes" width="440"
                   height="287" />
-                <div class="main-item__block">
-                  <h2 class="item-title item-title__hero icon-quizzes">Puzzle Quizzes</h2>
-                  <div class="wrapper-date wrapper-date__hero">
-                    <p class="item-text "><span class="decoration-text">NEW</span>Dec 8</p>
+                <div class="main__aside">
+                  <h2 class="item-title main__svg
+                   icon-quizzes">Puzzle Quizzes</h2>
+                  <div class="aside__wrapper-date wrapper-date">
+                    <p class="aside__text-date"><span class="aside__text--bold">NEW</span>Dec 8</p>
                   </div>
                 </div>
-                <div class="main-item__master">
-                  <h3 class="main-item__title title">HALF-MOONS</h3>
-                  <p class="main-item__text">
+                <div class="main__aside-master">
+                  <h3 class="aside-master__title aside__title title">HALF-MOONS</h3>
+                  <p class="aside__text--position">
                     Nine moons. Some ratio has to be reached
                     by rotating some number of the moons.
                   </p>
@@ -96,20 +99,20 @@
               </a>
             </div>
           </li>
-          <li class="main-item">
+          <li class="main__item">
             <div class="main-item__card">
-              <a class="main-item__link link" href="/logic-problems-new/index.php">
-                <img class="main-img" src="./images/sec-hero/HOLIDAY PIES.jpg" alt="Logic Problems" width="440"
+              <a class="main__link link" href="/logic-problems-new/index.php">
+                <img class="main__img" src="./images/sec-hero/HOLIDAY PIES.jpg" alt="Logic Problems" width="440"
                   height="287" />
-                <div class="main-item__block">
-                  <h2 class="item-title item-title__hero icon-logic ">Logic Problems</h2>
-                  <div class="wrapper-date wrapper-date__hero">
-                    <p class="item-text "><span class="decoration-text">NEW</span>Dec 8</p>
+                <div class="main__aside">
+                  <h2 class="item-title main__svg icon-logic ">Logic Problems</h2>
+                  <div class="aside__wrapper-date wrapper-date">
+                    <p class="aside__text-date"><span class="aside__text--bold">NEW</span>Dec 8</p>
                   </div>
                 </div>
-                <div class="main-item__master">
-                  <h3 class="main-item__title title">HOLIDAY PIES</h3>
-                  <p class="main-item__text">
+                <div class="main__aside-master">
+                  <h3 class="aside-master__title aside__title title">HOLIDAY PIES</h3>
+                  <p class="aside__text--position">
                     Each year during the holiday season, many
                     of the local charity groups sponsor annual
                   </p>
@@ -125,10 +128,10 @@
 
 
     <!-- section PUZZLE CLASSICS -->
-    <section id="classics" class="classic pzlclassic section container">
+    <section id="classics" class="classic  section container">
       <div class="wrapper-drop">
         <a href="/puzzle-classics/index.php" class="link">
-          <h2 class="section-title logo-classicsrgb title">PUZZLE CLASSICS </h2>
+          <h2 class="logo__title section-title classic__logo-classicsrgb title">PUZZLE CLASSICS </h2>
         </a>
         <div class="select-drop">
           <span class="arrow-down"></span>
@@ -143,29 +146,30 @@
       <div>
         <ul class="section-list list">
 
-          <li class="section-item">
+          <li class="classic__item section-item">
             <div class="wrap-img">
-              <img class="section-img" src="./images/sec-classic/svg/time.svg" alt="Time & Measures" />
+              <img class="" src="./images/sec-classic/svg/time.svg" alt="Time & Measures" />
             </div>
             <div class="section-item__block">
 
 
-              <h2 class="item-title transformation">Time & Measures</h2>
+              <h2 class="item-title  transformation">Time & Measures</h2>
               <div class="wrapper-date">
-                <p class="item-text transformation"><span class="decoration-text">NEW</span>Dec 8</p>
+                <p class="aside__text-date"><span class="aside__text--bold">NEW</span>Dec 8</p>
               </div>
             </div>
             <div class="section-item__master">
               <div class="transformation">
-                <h3 class="main-item__title position title">9 MINUTES WITH TWO HOURGLASSES</h3>
-                <p class="main-item__text">
+                <h3 class="aside__title aside__title--position   title">9 MINUTES WITH TWO
+                  HOURGLASSES</h3>
+                <p class="aside__text">
                   Using hourglasses - a 4-min and a 7-min - measure out exactly
                   nine minutes.
                 </p>
               </div>
             </div>
           </li>
-          <li class="section-item">
+          <li class="classic__item section-item">
             <div class="wrap-img">
               <img class="section-img" src="./images/sec-classic/svg/3d.svg" alt="3D Geometry" width="286"
                 height="280" />
@@ -178,15 +182,15 @@
             </div>
             <div class="section-item__master">
               <div class="transformation">
-                <h3 class="main-item__title position title">THE VOLUME OF WHICH
+                <h3 class="aside__title aside__title--position   title">THE VOLUME OF WHICH
                   CYLINDER IS BIGGE</h3>
-                <p class="main-item__text">
+                <p class="aside__text">
                   Suppose you have two identical Letter-sized sheets. One is rolled into a
                 </p>
               </div>
             </div>
           </li>
-          <li class="section-item">
+          <li class="classic__item section-item">
             <div class="wrap-img">
               <img class="section-img" src="./images/sec-classic/svg/logic.svg" alt="Logic" width="286" height="280" />
             </div>
@@ -198,37 +202,38 @@
             </div>
             <div class="section-item__master">
               <div class="transformation">
-                <h3 class="main-item__title position title">HOW MANY BROTHERS AND
+                <h3 class="aside__title aside__title--position   title">HOW MANY BROTHERS AND
                   SISTERS?</h3>
-                <p class="main-item__text">
+                <p class="aside__text">
                   In a family, each sibling has at least one brother and one sister.
                 </p>
               </div>
             </div>
           </li>
-          <li class="section-item">
+          <li class="classic__item section-item">
             <div class="wrap-img">
               <img class="section-img" src="./images/sec-classic/svg/time.svg" alt="Time & Measures" />
             </div>
             <div class="section-item__block">
 
 
-              <h2 class="item-title transformation">Time & Measures</h2>
+              <h2 class="item-title  transformation">Time & Measures</h2>
               <div class="wrapper-date">
-                <p class="item-text transformation"><span class="decoration-text">NEW</span>Dec 8</p>
+                <p class="aside__text-date"><span class="aside__text--bold">NEW</span>Dec 8</p>
               </div>
             </div>
             <div class="section-item__master">
               <div class="transformation">
-                <h3 class="main-item__title position title">9 MINUTES WITH TWO HOURGLASSES</h3>
-                <p class="main-item__text">
+                <h3 class="aside__title aside__title--position   title">9 MINUTES WITH TWO
+                  HOURGLASSES</h3>
+                <p class="aside__text">
                   Using hourglasses - a 4-min and a 7-min - measure out exactly
                   nine minutes.
                 </p>
               </div>
             </div>
           </li>
-          <li class="section-item">
+          <li class="classic__item section-item">
             <div class="wrap-img">
               <img class="section-img" src="./images/sec-classic/svg/3d.svg" alt="3D Geometry" width="286"
                 height="280" />
@@ -241,15 +246,15 @@
             </div>
             <div class="section-item__master">
               <div class="transformation">
-                <h3 class="main-item__title position title">THE VOLUME OF WHICH
+                <h3 class="aside__title aside__title--position   title">THE VOLUME OF WHICH
                   CYLINDER IS BIGGE</h3>
-                <p class="main-item__text">
+                <p class="aside__text">
                   Suppose you have two identical Letter-sized sheets. One is rolled into a
                 </p>
               </div>
             </div>
           </li>
-          <li class="section-item">
+          <li class="classic__item section-item">
             <div class="wrap-img">
               <img class="section-img" src="./images/sec-classic/svg/logic.svg" alt="Logic" width="286" height="280" />
             </div>
@@ -261,9 +266,9 @@
             </div>
             <div class="section-item__master">
               <div class="transformation">
-                <h3 class="main-item__title position title">HOW MANY BROTHERS AND
+                <h3 class="aside__title aside__title--position   title">HOW MANY BROTHERS AND
                   SISTERS?</h3>
-                <p class="main-item__text">
+                <p class="aside__text">
                   In a family, each sibling has at least one brother and one sister.
                 </p>
               </div>
@@ -275,11 +280,11 @@
     </section>
 
     <!-- section CHESS PUZZLES -->
-    <section id="chess" class="chess pzlclassic section container">
+    <section id="chess" class="chess  section container">
 
       <div class="wrapper-drop">
         <a href="/chess-puzzles/index.php" class="link">
-          <h2 class="section-title logo-chesspuzzgrin title">CHESS PUZZLES</h2>
+          <h2 class="logo__title section-title chess__logo-chesspuzzgrin title">CHESS PUZZLES</h2>
         </a>
         <div class="select-drop">
           <span class="arrow-down"></span>
@@ -296,25 +301,25 @@
       <div>
         <ul class="section-list list">
 
-          <li class="section-item">
+          <li class="section-item ">
             <div class="wrap-img">
               <img class="section-img" src="./images/sec-chess/chess-x.svg" alt="X-STEEPLECHASE" />
             </div>
-            <div class="section-item__block">
+            <div class="section-item__block section-item__block--position">
 
-              <p class="item-title transformation">Knights <span class="modification">4:4</span></p>
-              <p class="item-title transformation">Cells<span class="modification">11</span></p>
-              <p class="item-title transformation">Moves<span class="modification">22</span></p>
+              <p class="chess__item-title item-title transformation">Knights <span class="modification">4:4</span></p>
+              <p class="chess__item-title item-title transformation">Cells<span class="modification">11</span></p>
+              <p class="chess__item-title item-title transformation">Moves<span class="modification">22</span></p>
 
               <div class="wrapper-date">
-                <p class="item-text transformation"><span class="decoration-text">NEW</span>Dec 8</p>
+                <p class="aside__text-date"><span class="aside__text--bold">NEW</span>Dec 8</p>
               </div>
 
             </div>
             <div class="section-item__master">
               <div class="transformation">
-                <h3 class="main-item__title position title">X-STEEPLECHASE</h3>
-                <p class="main-item__text">
+                <h3 class="aside__title aside__title--position   title">X-STEEPLECHASE</h3>
+                <p class="aside__text">
                   Swap the black and white knights in the fewest moves. A move is any series
                 </p>
               </div>
@@ -324,17 +329,17 @@
             <div class="wrap-img">
               <img class="section-img" src="./images/sec-chess/chess-z.svg" alt="Z-STEEPLECHASE" />
             </div>
-            <div class="section-item__block">
+            <div class="section-item__block section-item__block--position">
 
-              <p class="item-title transformation">Knights <span class="modification">3:3</span></p>
-              <p class="item-title transformation">Cells<span class="modification">10</span></p>
-              <p class="item-title transformation">Moves<span class="modification">14</span></p>
+              <p class="chess__item-title item-title transformation">Knights <span class="modification">3:3</span></p>
+              <p class="chess__item-title item-title transformation">Cells<span class="modification">10</span></p>
+              <p class="chess__item-title item-title transformation">Moves<span class="modification">14</span></p>
 
             </div>
             <div class="section-item__master">
               <div class="transformation">
-                <h3 class="main-item__title position title">Z-STEEPLECHASE</h3>
-                <p class="main-item__text">
+                <h3 class="aside__title aside__title--position   title">Z-STEEPLECHASE</h3>
+                <p class="aside__text">
                   Swap the black and white knights in the fewest moves. A move is any series
                 </p>
               </div>
@@ -344,17 +349,17 @@
             <div class="wrap-img">
               <img class="section-img" src="./images/sec-chess/chess-c.svg" alt="C-SLIDE-KNIGHTS" />
             </div>
-            <div class="section-item__block">
+            <div class="section-item__block section-item__block--position">
 
-              <p class="item-title transformation">Knights <span class="modification">3:3</span></p>
-              <p class="item-title transformation">Cells<span class="modification">16</span></p>
-              <p class="item-title transformation">Moves<span class="modification">9</span></p>
+              <p class="chess__item-title item-title transformation">Knights <span class="modification">3:3</span></p>
+              <p class="chess__item-title item-title transformation">Cells<span class="modification">16</span></p>
+              <p class="chess__item-title item-title transformation">Moves<span class="modification">9</span></p>
 
             </div>
             <div class="section-item__master">
               <div class="transformation">
-                <h3 class="main-item__title position title">C-SLIDE-KNIGHTS</h3>
-                <p class="main-item__text">
+                <h3 class="aside__title aside__title--position   title">C-SLIDE-KNIGHTS</h3>
+                <p class="aside__text">
                   Swap the black and white knights in the fewest moves. A move is any series
                 </p>
               </div>
@@ -365,11 +370,11 @@
     </section>
 
     <!-- section COIN PUZZLES  -->
-    <section id="coin" class="coin coin-section pzlclassic section ">
+    <section id="coin" class="coin coin-section  section ">
 
       <div class="wrapper-drop container">
         <a href="/coin-puzzles/index.php" class="link">
-          <h2 class="section-title logo-coinrgb title">COIN PUZZLES</h2>
+          <h2 class="logo__title coin__section-title section-title coin__logo-coinrgb title">COIN PUZZLES</h2>
         </a>
         <div class="select-drop">
           <span class="arrow-down"></span>
@@ -385,70 +390,76 @@
 
         <div>
           <ul class="section-list list">
-            <li class="coin-item">
+            <li class="coin__item">
               <div class="wrapper-img">
-                <img class="coin-img" src="./images/sec-coin/keypart2.png" alt="UNLOCK THE KEY-PART 2">
+                <img class="coin__img" src="./images/sec-coin/keypart2.png" alt="UNLOCK THE KEY-PART 2">
               </div>
 
 
               <div class="flex-item">
-                <h3 class="coin-title">UNLOCK THE KEY-PART 2 </h3>
-                <div class="coin-text">
-                  <p class="item-title">Coins<span class="modification">8</span></p>
-                  <p class="item-title">Moves<span class="modification">14</span></p>
-                  <p class="coin-title-svg item-title">Slide+Touch2<span class="modification"></span></p>
+                <h3 class="coin__title">UNLOCK THE KEY-PART 2 </h3>
+                <div class="coin__aside--wrap">
+                  <p class="coin__aside-title coin__item-title item-title">Coins<span class="modification">8</span></p>
+                  <p class="coin__aside-title coin__item-title item-title">Moves<span class="modification">14</span></p>
+                  <p class="coin__aside-title coin__title-svg coin__item-title item-title">Slide+Touch2
+                  </p>
                 </div>
-                <p class="main-item__text">Convert the square frame into
+                <p class="aside__text aside__text--changes">Convert the square frame into
                   the shape of a key a series</p>
-                <div class=" coin-date ">
-                  <div class="wrapper-date ">
-                    <p class="item-text "><span class="decoration-text">NEW</span>Dec 8</p>
+                <div class=" coin__date ">
+                  <div class="wrapper-date coin__wrapper-date ">
+                    <p class="aside__text-date"><span class="aside__text--bold">NEW</span>Dec 8</p>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="coin-item">
+            <li class="coin__item">
               <div class="wrapper-img">
-                <img class="coin-img eurotodollar" src="./images/sec-coin/eurotodollar.png" alt="EURO TO DOLLAR">
+                <img class="coin__img eurotodollar" src="./images/sec-coin/eurotodollar.png" alt="EURO TO DOLLAR">
               </div>
               <div class="flex-item">
-                <h3 class="coin-title">EURO TO DOLLAR</h3>
-                <div class="coin-text">
-                  <p class="item-title">Coins<span class="modification">9</span></p>
-                  <p class="item-title">Moves<span class="modification">6</span></p>
-                  <p class="coin-title-svg item-title">Slide+Touch2<span class="modification"></span></p>
+                <h3 class="coin__title">EURO TO DOLLAR</h3>
+                <div class="coin__aside--wrap">
+                  <p class="coin__aside-title coin__item-title item-title">Coins<span class="modification">9</span></p>
+                  <p class=" coin__aside-title coin__item-title item-title">Moves<span class="modification">6</span></p>
+                  <p class="coin__aside-title coin__item-title coin__title-svg item-title">Slide+Touch2<span
+                      class="modification"></span>
+                  </p>
                 </div>
-                <p class="main-item__text">Convert the square frame into
+                <p class="aside__text aside__text--changes">Convert the square frame into
                   the shape of a key a series</p>
               </div>
             </li>
-            <li class="coin-item">
+            <li class="coin__item">
               <div class="wrapper-img">
-                <img class="coin-img coincup" src="./images/sec-coin/coincup.png" alt="COIN CUP">
+                <img class="coin__img coincup" src="./images/sec-coin/coincup.png" alt="COIN CUP">
               </div>
               <div class="flex-item">
-                <h3 class="coin-title">COIN CUP</h3>
-                <div class="coin-text">
-                  <p class="item-title">Coins<span class="modification">8</span></p>
-                  <p class="item-title">Moves<span class="modification">2</span></p>
-                  <p class="coin-title-svg item-title">Slide+Touch2<span class="modification"> </span></p>
+                <h3 class="coin__title">COIN CUP</h3>
+                <div class="coin__aside--wrap">
+                  <p class="coin__aside-title coin__item-title item-title">Coins<span class="modification">8</span></p>
+                  <p class="coin__aside-title coin__item-title item-title">Moves<span class="modification">2</span></p>
+                  <p class="coin__aside-title coin__item-title coin__title-svg item-title">Slide+Touch2<span
+                      class="modification"> </span>
+                  </p>
                 </div>
-                <p class="main-item__text">Convert the square frame into
+                <p class="aside__text aside__text--changes">Convert the square frame into
                   the shape of a key a series</p>
               </div>
             </li>
-            <li class="coin-item">
+            <li class="coin__item">
               <div class="wrapper-img">
-                <img class="coin-img triangles" src="./images/sec-coin/triangles.png" alt="COINS & TRIANGLES">
+                <img class="coin__img triangles" src="./images/sec-coin/triangles.png" alt="COINS & TRIANGLES">
               </div>
               <div class="flex-item">
-                <h3 class="coin-title">COINS & TRIANGLES</h3>
-                <div class="coin-text">
-                  <p class="item-title">Coins<span class="modification">8</span></p>
-                  <p class="item-title">Moves<span class="modification">2</span></p>
-                  <p class="coin-title-svg another-svg item-title">Remove<span class="modification"></span></p>
+                <h3 class="coin__title">COINS & TRIANGLES</h3>
+                <div class="coin__aside--wrap">
+                  <p class="coin__aside-title coin__item-title item-title">Coins<span class="modification">8</span></p>
+                  <p class="coin__aside-title coin__item-title item-title">Moves<span class="modification">2</span></p>
+                  <p class="coin__aside-title coin__item-title coin__title-svg coin__title-svg--another item-title">
+                    Remove<span class="modification"></span></p>
                 </div>
-                <p class="main-item__text">Convert the square frame into
+                <p class="aside__text aside__text--changes">Convert the square frame into
                   the shape of a key a series</p>
               </div>
             </li>
@@ -462,11 +473,11 @@
 
 
     <!-- section LOGIC PROBLEMS -->
-    <section id="logic" class="logic pzlclassic section container">
+    <section id="logic" class="logic section container">
 
       <div class="wrapper-drop">
         <a href="/logic-problems-new/index.php" class="link">
-          <h2 class="section-title logo-logicrgb title">LOGIC PROBLEMS</h2>
+          <h2 class="logo__title logic__section-title section-title logic__logo-logicrgb title">LOGIC PROBLEMS</h2>
         </a>
         <div class="select-drop">
           <span class="arrow-down"></span>
@@ -479,58 +490,54 @@
         </div>
       </div>
       <div>
-        <ul class="section-list list">
-          <li class="section-item">
-            <div class="logic-img">
-              <img class="section-img" src="./images/sec-logic/groupsnowstorm.png" alt="SNOW STORM!" />
+        <ul class="logic__section-list section-list list">
+          <li class="logic__item">
+            <div class="logic__wrap-img">
+              <img class="logic__img" src="./images/sec-logic/groupsnowstorm.png" alt="SNOW STORM!" />
             </div>
-            <div class="logic logic-item__block">
-              <p class="item-title logic-title "># of groups <span class="modification">5</span></p>
-              <p class="item-title "># of labels <span class="modification">4</span></p>
+            <div class="logic__item-block">
+              <p class="item-title logic__title "># of groups <span class="modification">5</span></p>
+              <p class="item-title logic__title"># of labels <span class="modification">4</span></p>
 
 
 
-              <div class="wrapper-date">
-                <p class="item-text transformation"><span class="decoration-text">NEW</span>Dec 8</p>
+              <div class="logic__wrapper-date wrapper-date">
+                <p class="aside__text-date transformation"><span class="aside__text--bold">NEW</span>Dec 8</p>
               </div>
 
             </div>
-            <div class="section-item">
+            <div class="logic__wrap-item">
 
-              <h3 class="main-item__title  title">SNOW STORM!</h3>
-              <p class="main-item__text">
+              <h3 class="logic__aside-title aside__title  title">SNOW STORM!</h3>
+              <p class="logic__aside-text">
                 It snowed last night! Four couples woke up to a winter wonderland
                 this morning. Due to the high winds during the storm, the snow
               </p>
 
             </div>
           </li>
-          <li class="reverse section-item">
+          <li class="reverse logic__item">
 
 
-            <div class="section-item">
+            <div class="logic__wrap-item">
 
-              <h3 class="main-item__title main-item__title-reverse title">WINTER OLYMPICS</h3>
-              <p class="main-item__text">
+              <h3 class="logic__aside-title--revers aside__title  title">WINTER OLYMPICS</h3>
+              <p class="logic__aside-text--revers">
                 It snowed last night! Four couples woke up to a winter wonderland
                 this morning. Due to the high winds during the storm, the snow
               </p>
 
             </div>
-            <div class="logic-revers logic-item__block-reverse">
-              <div class="wrapper-date">
-                <p class="item-text transformation"><span class="decoration-text">NEW</span>Dec 8</p>
+            <div class="logic-revers logic__item-block--reverse">
+              <div class="logic__wrapper-date--revers wrapper-date">
+                <p class="aside__text-date transformation"><span class="aside__text--bold">NEW</span>Dec 8</p>
               </div>
-              <p class="item-title "># of groups <span class="modification">5</span></p>
-              <p class="item-title "># of labels <span class="modification">4</span></p>
-
-
-
-
+              <p class="item-title logic__title "># of groups <span class="modification">5</span></p>
+              <p class="item-title logic__title "># of labels <span class="modification">4</span></p>
 
             </div>
-            <div class="logic-img reverse">
-              <img class="section-img__revers" src="./images/sec-logic/groupwinterolympics.png" alt="Coin Puzzles" />
+            <div class="logic__wrap-img logic__wrap-img--reverse">
+              <img class="logic__img--revers" src="./images/sec-logic/groupwinterolympics.png" alt="Coin Puzzles" />
             </div>
           </li>
         </ul>
