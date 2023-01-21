@@ -958,6 +958,7 @@ img {
 /* Dropdown */
 .dropdown {
   margin-top: 22px;
+  height: 33px;
 }
 
 .drop-btn {
