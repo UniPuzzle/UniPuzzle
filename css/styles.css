@@ -233,19 +233,19 @@ img {
   right: 0;
 }
 
-#btn {
+/* #btn-classics {
   display: none;
 }
 
-#btn:checked + .drop-btn .link-drop {
+#btn-classics:checked + .drop-btn .link-drop {
   display: block;
-}
-#btn:checked + .drop-btn {
+} */
+.btn:checked + .drop-btn {
   width: 619px;
   height: 109px;
 }
 
-#btn:checked + .drop-btn .dropdown__arrow::after {
+.btn:checked + .drop-btn .dropdown__arrow::after {
   background-image: url(../images/svg/arrowup.svg);
 }
 
@@ -628,6 +628,13 @@ img {
 .section-classics {
   padding-top: 80px;
 }
+#btn-classics {
+  display: none;
+}
+
+#btn-classics:checked + .drop-btn .link-drop {
+  display: block;
+}
 .logo__title::before {
   content: '';
   display: block;
@@ -697,6 +704,15 @@ img {
 .section-chess {
   padding-top: 40px;
 }
+
+#btn-chess {
+  display: none;
+}
+
+#btn-chess:checked + .drop-btn .link-drop {
+  display: block;
+}
+
 .chess__item-title {
   padding-top: 9px;
   padding-bottom: 4px;
@@ -711,6 +727,14 @@ img {
 
 .coin-section {
   padding-top: 40px;
+}
+
+#btn-coin {
+  display: none;
+}
+
+#btn-coin:checked + .drop-btn .link-drop {
+  display: block;
 }
 
 .section__column {
@@ -840,6 +864,14 @@ img {
 /* section LOGIC PROBLEMS */
 .logic-section {
   padding-top: 40px;
+}
+
+#btn-logic {
+  display: none;
+}
+
+#btn-logic:checked + .drop-btn .link-drop {
+  display: block;
 }
 
 .logic__section-title {
