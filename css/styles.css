@@ -233,13 +233,6 @@ img {
   right: 0;
 }
 
-/* #btn-classics {
-  display: none;
-}
-
-#btn-classics:checked + .drop-btn .link-drop {
-  display: block;
-} */
 .btn:checked + .drop-btn {
   width: 619px;
   height: 109px;
@@ -687,6 +680,7 @@ img {
   border-radius: 4px;
   display: flex;
   align-items: center;
+  overflow-x: hidden;
   background-color: var(--item-block-bgc);
   transform: skewX(-10deg);
 }
@@ -990,6 +984,7 @@ img {
 }
 
 .logic__header {
+  width: 100%;
   display: flex;
   position: absolute;
 }
@@ -1219,4 +1214,57 @@ img {
 .footer__link--hover:hover,
 .footer__link--hover:focus {
   font-size: 13px;
+}
+
+/* ============================= */
+.section-item:hover .flare {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  height: 42px;
+  width: 12px;
+  transform: skewX(-10deg);
+  animation: flareAnimation;
+  /* left: -150%; */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.4)
+  );
+  animation: flareAnimation 2s infinite linear;
+}
+
+@keyframes flareAnimation {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.logic__item:hover .flare {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  height: 40px;
+  width: 12px;
+  transform: skewX(-10deg);
+  animation: flareAnimation;
+  /* left: -150%; */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.4)
+  );
+  animation: flareAnimation 2s infinite linear;
+}
+
+@keyframes flareAnimation {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 98%;
+  }
 }
