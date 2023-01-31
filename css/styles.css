@@ -1328,16 +1328,16 @@ img {
   z-index: 5;
   top: 0;
   height: 42px;
-  width: 12px;
-  transform: skewX(-10deg);
+  width: 25px;
+  transform: skewX(0deg);
   animation: flareAnimation;
-  /* left: -150%; */
+  left: -27px;
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.4)
   );
-  animation: flareAnimation 2s infinite linear;
+  animation: flareAnimation 2s 1 linear;
 }
 
 @keyframes flareAnimation {
@@ -1354,16 +1354,16 @@ img {
   z-index: 5;
   top: 0;
   height: 40px;
-  width: 12px;
+  width: 25px;
   transform: skewX(-10deg);
   animation: flareAnimation;
-  /* left: -150%; */
+  left: -27px;
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.4)
   );
-  animation: flareAnimation 2s infinite linear;
+  animation: flareAnimation 2s 1 linear;
 }
 
 @keyframes flareAnimation {
